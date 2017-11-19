@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div{
+     position: relative; 
+     animation: mymove 2.6s infinite;
+     animation-delay: 2s;
+     display: initial;
+}
+ 
+#2{
+    animation: goal;
+    animation-delay: 2.6s;
+    font: 15px arial, sans-serif;
+    color: white;
+}
+
+@keyframes mymove {
+    from {font: 15px;}
+    to {font: 50px;}
+}
+
+body {
+    background-image: url("goalposts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes mymove {
+    from {left: 0px;top: 0px;}
+    to {left: 700px;top: -100px;}
+}
+
+#1 {  animation-timing-function: ease-in-out;}
+</style>
+</head>
+<body>
+<img src="football.gif" style="width:200px;margin-left:47px;margin-top:180px" >
+<div>
+<img src="football1.jpg" style="width:30px" id="1">
+</div>
+</body>
+</html>
